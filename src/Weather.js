@@ -7,7 +7,7 @@ const Weather = ({description, city,  error, temperature,icon, temperaturef}) =>
             <img src ={"http://openweathermap.org/img/wn/"+icon+"@2x.png"}/>
             {city && <p>{city}</p>}
             <br></br>
-            <div>
+            <div >
 
     <Segment circular >
       <Header as='h2'>
@@ -22,6 +22,7 @@ const Weather = ({description, city,  error, temperature,icon, temperaturef}) =>
       </Header>
        
     </Segment>
+    <br></br>
   </div>
 
             {description && <p> Conditions: {description}</p>}
