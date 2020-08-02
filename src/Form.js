@@ -6,12 +6,12 @@ const Form = (props) => {
         <Container>
         <form onSubmit={props.getWeather}>
           <Input 
-    icon={<Icon name='search' inverted circular link />}
+    icon = 'search'
     placeholder='Search...' name = 'city'
   />
        <br></br>    
        <br></br>  
-            <Button color ='yellow'  icon={<Icon name='search' inverted circular link />}>search</Button>
+            <Button color ='yellow' style={{Size:'lg'}}  icon={<Icon name='search' inverted circular link />}>search</Button>
         </form>
         </Container>
     )

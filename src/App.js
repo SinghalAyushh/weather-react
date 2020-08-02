@@ -43,15 +43,17 @@ function App() {
       )}
     
   }
-  
+
+
 const src = `https://source.unsplash.com/1820x900/?weather,?=${weather.description}`
   return (
+    
+   
     <div className="App" style ={{  backgroundImage:`url(${src})`}}>
       <div className="Navbar" >
     
     <span className ='wes' style={{color : 'orange' }}>24</span><Icon name='x'/><span className ='wes'>7 </span><span className ='wes'>CLOUDY</span><span className ='wes' style={{color : 'orange' }}>LIVE.com</span> <Icon name='cloud'/> 
    
-
    
   </div>
       <Form getWeather={fetchData} />
