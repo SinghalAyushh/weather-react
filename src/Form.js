@@ -1,10 +1,12 @@
 import React from 'react'
 import './form.css';
-import { Input,Button,Icon ,Container} from 'semantic-ui-react';
+import { Input,Button,Icon ,Container, Label} from 'semantic-ui-react';
 const Form = (props) => {
     return (
         <Container>
+
         <form onSubmit={props.getWeather}>
+            <h2 style={{color :'orange' }}><b>City:</b></h2>
           <Input 
     icon = 'search'
     placeholder='Search...' name = 'city'
