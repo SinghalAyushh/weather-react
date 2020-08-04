@@ -23,3 +23,16 @@
   font-size:2.3rem;
   font-weight: 900;
 }
+.footer{
+  position: absolute;
+  top:90%;
+  align-items: center;
+ 
+}
+.element{
+  position: absolute;
+  top:95%;
+  align-items: center;
+
+ 
+}

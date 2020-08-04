@@ -1,5 +1,6 @@
 import React from 'react'
-import { Header,Segment} from 'semantic-ui-react';
+import { Header,Segment,Container} from 'semantic-ui-react';
+import './weather.css';
 
 const Weather = ({description, city,  error, temperature,icon, temperaturef}) => {
     return (
@@ -24,7 +25,7 @@ const Weather = ({description, city,  error, temperature,icon, temperaturef}) =>
     </Segment>
     <br></br>
   </div>
-  <div className='aay' >
+  <div className ='ayu'>
   {city && <h3 >{city}</h3>}
             {description && <h3> Conditions: {description}</h3>}
             {error && <h3>{error}</h3>}
