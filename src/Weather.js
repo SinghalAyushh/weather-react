@@ -3,9 +3,9 @@ import { Header,Segment} from 'semantic-ui-react';
 
 const Weather = ({description, city,  error, temperature,icon, temperaturef}) => {
     return (
-        <div>
+        <div >
             <img src ={"http://openweathermap.org/img/wn/"+icon+"@2x.png"}/>
-            {city && <p>{city}</p>}
+           
             <br></br>
             <div >
 
@@ -24,9 +24,11 @@ const Weather = ({description, city,  error, temperature,icon, temperaturef}) =>
     </Segment>
     <br></br>
   </div>
-
-            {description && <p> Conditions: {description}</p>}
-            {error && <p>{error}</p>}
+  <div className='aay' >
+  {city && <h3 >{city}</h3>}
+            {description && <h3> Conditions: {description}</h3>}
+            {error && <h3>{error}</h3>}
+        </div>
         </div>
     )
 }

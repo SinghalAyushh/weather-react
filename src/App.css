@@ -8,13 +8,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
+
 
 .Navbar{
   top: 0%;
   position:absolute;
   width: 100%;
-  background-color: transparent;
+  mix-blend-mode: difference;
   
 }
 .wes{

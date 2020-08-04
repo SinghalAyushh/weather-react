@@ -43,11 +43,46 @@ function App() {
       )}
     
   }
+  var src;
+  if(weather.description === 'few clouds'){
+    src = `https://source.unsplash.com/1820x900/?weather,cloud` ;
+  
+  }
+  else  if(weather.description === 'clear sky'){
+    src = `https://source.unsplash.com/1820x900/?weather,clearsky` ;
+  
+  }
+  else  if(weather.description === 'scattered clouds'){
+    src = `https://source.unsplash.com/1820x900/?weather,scatteredclouds` ;
+  
+  }
+  else  if(weather.description === 'broken clouds'){
+    src = `https://source.unsplash.com/1820x900/?weather,brokenclouds` ;
+  
+  }
+  else  if(weather.description === 'shower rain'){
+    src = `https://source.unsplash.com/1820x900/?weather,showerrain` ;
+  
+  }else  if(weather.description === 'thunderstorm'){
+    src = `https://source.unsplash.com/1820x900/?weather,	thunderstorm` ;
+  
+  }else  if(weather.description === 'snow'){
+    src = `https://source.unsplash.com/1820x900/?weather,snow` ;
+  
+  }else  if(weather.description === 'mist'){
+    src = `https://source.unsplash.com/1820x900/?weather,mist` ;
+  
+  }else  if(weather.description === 'smoke'){
+    src = `https://source.unsplash.com/1820x900/?weather,smoke` ;
+  
+  }
+  else{
+    src = `https://source.unsplash.com/1820x900/?weather,rain` ;
+  }
+ 
 
 
-const src = `https://source.unsplash.com/1820x900/?weather,?=${weather.description}`
   return (
-    
    
     <div className="App" style ={{  backgroundImage:`url(${src})`}}>
       <div className="Navbar" >
