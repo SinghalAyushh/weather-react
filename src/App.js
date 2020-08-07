@@ -103,7 +103,7 @@ function App() {
 
   return (
    
-    <div className="App" style ={{  backgroundImage:`url(${src})`}}>
+    <div className="App" style ={{  backgroundImage:`url(${src})` }}>
      
       <div className="Navbar" >
     
